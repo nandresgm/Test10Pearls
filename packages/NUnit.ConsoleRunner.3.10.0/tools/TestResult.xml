@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="8" result="Failed" total="8" passed="6" failed="2" inconclusive="0" skipped="0" asserts="7" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-10-15 04:12:20Z" end-time="2019-10-15 04:16:01Z" duration="220.528418">
+  <command-line><![CDATA[nunit3-console.exe  "C:\Users\DOBY\Downloads\TestEtsy\TestEtsy\bin\Debug\TestEtsy.exe"]]></command-line>
+  <test-suite type="Assembly" id="0-1011" name="TestEtsy.exe" fullname="C:\Users\DOBY\Downloads\TestEtsy\TestEtsy\bin\Debug\TestEtsy.exe" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2019-10-15 04:12:21Z" end-time="2019-10-15 04:16:01Z" duration="219.513316" total="8" passed="6" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="7">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.17763.0" platform="Win32NT" cwd="C:\Users\DOBY\Downloads\TestEtsy\packages\NUnit.ConsoleRunner.3.10.0\tools" machine-name="DESKTOP-8NO8HD6" user="DOBY" user-domain="DESKTOP-8NO8HD6" culture="es-CO" uiculture="es-ES" os-architecture="x86" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\DOBY\Downloads\TestEtsy\packages\NUnit.ConsoleRunner.3.10.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="True" />
+      <setting name="RunAsX86" value="True" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="12552" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1012" name="TestEtsy" fullname="TestEtsy" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2019-10-15 04:12:21Z" end-time="2019-10-15 04:16:01Z" duration="219.495790" total="8" passed="6" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="7">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1013" name="Scenarios" fullname="TestEtsy.Scenarios" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2019-10-15 04:12:21Z" end-time="2019-10-15 04:16:01Z" duration="219.495355" total="8" passed="6" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="7">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="0-1000" name="CreateAccount" fullname="TestEtsy.Scenarios.CreateAccount" classname="TestEtsy.Scenarios.CreateAccount" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2019-10-15 04:12:21Z" end-time="2019-10-15 04:13:31Z" duration="69.693718" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="0-1001" name="Register" fullname="TestEtsy.Scenarios.CreateAccount.Register" methodname="Register" classname="TestEtsy.Scenarios.CreateAccount" runstate="Runnable" seed="759106575" result="Failed" start-time="2019-10-15 04:12:21Z" end-time="2019-10-15 04:12:37Z" duration="15.132403" asserts="1">
+            <failure>
+              <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[   en TestEtsy.Scenarios.CreateAccount.Register() en C:\Users\DOBY\Downloads\TestEtsy\TestEtsy\Scenarios\CreateAccount.cs:línea 26
+]]></stack-trace>
+            </failure>
+            <assertions>
+              <assertion result="Failed">
+                <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+                <stack-trace><![CDATA[   en TestEtsy.Scenarios.CreateAccount.Register() en C:\Users\DOBY\Downloads\TestEtsy\TestEtsy\Scenarios\CreateAccount.cs:línea 26
+]]></stack-trace>
+              </assertion>
+            </assertions>
+          </test-case>
+          <test-case id="0-1003" name="RegisterWithGmail" fullname="TestEtsy.Scenarios.CreateAccount.RegisterWithGmail" methodname="RegisterWithGmail" classname="TestEtsy.Scenarios.CreateAccount" runstate="Runnable" seed="864290542" result="Failed" label="Error" start-time="2019-10-15 04:12:37Z" end-time="2019-10-15 04:13:09Z" duration="32.451033" asserts="0">
+            <failure>
+              <message><![CDATA[OpenQA.Selenium.WebDriverException : Failed to convert data to an object]]></message>
+              <stack-trace><![CDATA[   en OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   en OpenQA.Selenium.By.<>c__DisplayClass19_0.<XPath>b__0(ISearchContext context)
+   en OpenQA.Selenium.By.FindElement(ISearchContext context)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   en OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   en OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   en OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en OpenQA.Selenium.IWebElement.get_Displayed()
+   en TestEtsy.Pages.Index.CheckSesion() en C:\Users\DOBY\Downloads\TestEtsy\TestEtsy\Pages\Index.cs:línea 45
+   en TestEtsy.Scenarios.CreateAccount.RegisterWithGmail() en C:\Users\DOBY\Downloads\TestEtsy\TestEtsy\Scenarios\CreateAccount.cs:línea 49]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="0-1002" name="TestFields" fullname="TestEtsy.Scenarios.CreateAccount.TestFields" methodname="TestFields" classname="TestEtsy.Scenarios.CreateAccount" runstate="Runnable" seed="325779383" result="Passed" start-time="2019-10-15 04:13:09Z" end-time="2019-10-15 04:13:31Z" duration="22.083296" asserts="1" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1004" name="Login" fullname="TestEtsy.Scenarios.Login" classname="TestEtsy.Scenarios.Login" runstate="Runnable" testcasecount="4" result="Passed" start-time="2019-10-15 04:13:31Z" end-time="2019-10-15 04:15:32Z" duration="121.180749" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
+          <test-case id="0-1005" name="doLogin" fullname="TestEtsy.Scenarios.Login.doLogin" methodname="doLogin" classname="TestEtsy.Scenarios.Login" runstate="Runnable" seed="371236019" result="Passed" start-time="2019-10-15 04:13:31Z" end-time="2019-10-15 04:14:27Z" duration="56.116916" asserts="0" />
+          <test-case id="0-1007" name="InvalidEmail" fullname="TestEtsy.Scenarios.Login.InvalidEmail" methodname="InvalidEmail" classname="TestEtsy.Scenarios.Login" runstate="Runnable" seed="1929469835" result="Passed" start-time="2019-10-15 04:14:27Z" end-time="2019-10-15 04:14:49Z" duration="22.285970" asserts="1" />
+          <test-case id="0-1008" name="InvalidPassword" fullname="TestEtsy.Scenarios.Login.InvalidPassword" methodname="InvalidPassword" classname="TestEtsy.Scenarios.Login" runstate="Runnable" seed="1268530587" result="Passed" start-time="2019-10-15 04:14:49Z" end-time="2019-10-15 04:15:10Z" duration="20.938429" asserts="1" />
+          <test-case id="0-1006" name="LoginFields" fullname="TestEtsy.Scenarios.Login.LoginFields" methodname="LoginFields" classname="TestEtsy.Scenarios.Login" runstate="Runnable" seed="1456190705" result="Passed" start-time="2019-10-15 04:15:10Z" end-time="2019-10-15 04:15:32Z" duration="21.833733" asserts="2" />
+        </test-suite>
+        <test-suite type="TestFixture" id="0-1009" name="Product" fullname="TestEtsy.Scenarios.Product" classname="TestEtsy.Scenarios.Product" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-10-15 04:15:32Z" end-time="2019-10-15 04:16:01Z" duration="28.606875" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-case id="0-1010" name="addProducto" fullname="TestEtsy.Scenarios.Product.addProducto" methodname="addProducto" classname="TestEtsy.Scenarios.Product" runstate="Runnable" seed="1871658819" result="Passed" start-time="2019-10-15 04:15:32Z" end-time="2019-10-15 04:16:01Z" duration="28.606079" asserts="1" />
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
