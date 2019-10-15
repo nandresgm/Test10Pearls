@@ -14,16 +14,16 @@ namespace TestEtsy
         //Account to register
         public static class AccountRegister
         {
-            public static string email = "elizabeth19993@outlook.es";
+            public static string email = "giraldona@outlook.es";
             public static string nombre = "Nelson Andres Giraldo Montoya";
-            public static string password = "Nandresgm*";
+            public static string password = "Prueba123*";
         }
 
         //Account to register using gmail
         public static class GmailAccount
         {
-            public static string email = "giraldonn@gmail.com";
-            public static string password = "Leoina123*";
+            public static string email = "montoyann19@gmail.com";
+            public static string password = "Prueba123*";
         }
 
         //Scenarios for test the login
